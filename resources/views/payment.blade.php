@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css">
+</head>
+<body class="bg-gray-500">
+
+<div class="flex h-screen">
+    <div class="m-auto">
+        <div class="max-w-sm rounded overflow-hidden  bg-white shadow-lg p-5">
+            <img class="" src="https://media0.giphy.com/media/1wX5TJZPqVw3HhyDYn/giphy.gif" alt="Sunset in the mountains">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">Bezahlung</div>
+                <p class="text-gray-700 text-base">
+                  Moin {{$order->first_name}}! Um dein Ticket zu erhalten, überweise bitte folgenden Betrag auf eins dieser Konten: <br>
+                <h2 class="font-bold">Betrag:</h2>
+                <ul class="list-disc">
+                    @if($order->option=="weekend")<li>+25€ Full Weekend</li>
+                   @else<li>5€ Tagesticket</li>
+                    @endif
+                    @if($order->tshirt == true)
+                    <li>+15€ T-Shirt</li>
+                        @endif
+                        <li>={{$order->getPrice()}} €</li>
+                </ul>
+<h2 class="font-bold">an</h2>
+                    <ul class="list-disc">
+                    <li>PayPal: marienfeldtom@googlemail.com</li>
+                    <li>IBAN: DE12 0000 1234 5789 00</li>
+                    <li>BIC: BYLADEM1001</li>
+                </ul>
+                    </p>
+            </div>
+            <div class="px-6 py-4">
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#bock</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#auf</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#feiern</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

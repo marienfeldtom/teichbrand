@@ -25,10 +25,10 @@
                     @if($order->option=="weekend")<li>+25€ Full Weekend</li>
                    @else<li>5€ Tagesticket</li>
                     @endif
-                    @if($order->tshirt == true)
+                    @if($order->tshirt != "Nein")
                     <li>+15€ T-Shirt</li>
                         @endif
-                        <li class="font-bold underline">={{$order->getPrice()}} €</li>
+                        <li class="font-bold" style="text-decoration: overline">={{$order->getPrice()}} €</li>
                 </ul>
 <h2 class="font-bold">an</h2>
                     <ul class="list-disc">

@@ -115,7 +115,8 @@
                 icon: 'success',
                 title: 'Hurra, du bist dabei!',
                 confirmButtonText: 'Zur Bezahlung',
-                text: 'Deine Bestellung wurde aufgenommen!'
+                text: 'Deine Bestellung wurde aufgenommen!',
+                allowOutsideClick: false
             }).then(function() {
                 window.location.href = "/payment/"+ response.data.token;
             })

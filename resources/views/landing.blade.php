@@ -70,7 +70,7 @@
         <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
             <p class="uppercase tracking-loose w-full">Willkommen zum</p>
             <h1 class="my-4 text-5xl font-bold leading-tight">Teichbrand 2020!</h1>
-            <p class="leading-normal text-2xl mb-8">17.07 - 19-07</p>
+            <p class="leading-normal text-2xl mb-8">17.07 - 19.07</p>
 
 
 

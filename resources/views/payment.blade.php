@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html style="height: 100%">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -10,12 +10,12 @@
 
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css">
 </head>
-<body class="bg-gray-500">
+<body class="bg-gray-500 bg-no-repeat bg-center bg-cover" style="background-image: url('https://ellocamping.de/wp-content/uploads/2019/09/zelt.jpg')">
 
 <div class="flex h-screen">
     <div class="m-auto">
-        <div class="max-w-sm rounded overflow-hidden  bg-white shadow-lg p-5">
-            <img class="" src="https://media0.giphy.com/media/1wX5TJZPqVw3HhyDYn/giphy.gif" alt="Sunset in the mountains">
+        <div class="max-w-sm rounded overflow-hidden bg-white shadow-lg p-5">
+            <img class="w-32 ml-auto mr-auto" src="https://media0.giphy.com/media/1wX5TJZPqVw3HhyDYn/giphy.gif">
             <div class="px-6 py-4">
                 <div class="font-bold text-xl mb-2">Bezahlung</div>
                 <p class="text-gray-700 text-base">
@@ -28,7 +28,7 @@
                     @if($order->tshirt == true)
                     <li>+15€ T-Shirt</li>
                         @endif
-                        <li>={{$order->getPrice()}} €</li>
+                        <li class="font-bold underline">={{$order->getPrice()}} €</li>
                 </ul>
 <h2 class="font-bold">an</h2>
                     <ul class="list-disc">

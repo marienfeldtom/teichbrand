@@ -21,7 +21,7 @@ class CreateOrdersTable extends Migration
             $table->enum('option', ['weekend', 'daily']);
             $table->string('token');
             $table->boolean('paid')->default(false);
-            $table->boolean('tshirt')->default(false);
+            $table->string('tshirt');
             $table->timestamps();
         });
     }

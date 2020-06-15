@@ -18,7 +18,7 @@ class Order extends Model
         } else {
             $value = $value + 5;
         }
-        if($this->tshirt == true) {
+        if($this->tshirt != "Nein") {
             $value = $value + 15;
         }
 

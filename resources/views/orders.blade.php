@@ -25,6 +25,7 @@
                                     <th scope="col">T-Shirt?</th>
                                     <th scope="col">Datum</th>
                                     <th scope="col">Bezahlt</th>
+                                    <th scope="col">Betrag</th>
                                     <th scope="col">Aktion</th>
                                 </tr>
                                 </thead>
@@ -36,9 +37,10 @@
                                     <td>{{$order->last_name}}</td>
                                     <td>{{$order->email}}</td>
                                     <td>{{$order->option}}</td>
-                                    <td>{{$order->tshirt ? 'Ja' : 'Nein'}}</td>
+                                    <td>{{$order->tshirt}}</td>
                                         <td>{{Carbon\Carbon::parse($order->created_at)->format('d.m.Y - H:i')}}</td>
                                     <td>{{$order->paid ? Carbon\Carbon::parse($order->updated_at)->format('d.m.Y - H:i') : 'Nein'}}</td>
+                                        <td>{{$order->getPrice()}} €</td>
                                     <td>{!! Form::open(['url'=>['/orders', $order->id], 'class' => 'form-inline', 'onsubmit' => 'confirm("Bist du dir sicher?")', 'method'=>'Delete']) !!}
                                         <div class="btn-group" role="group" >
                                         <button type="submit" class="btn btn-outline-danger">Löschen</button>

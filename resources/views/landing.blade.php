@@ -74,7 +74,7 @@
 
 
 
-            <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">Ticket kaufen</button>
+            <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg"><a href="/orders/create">Ticket kaufen</a></button>
 
         </div>
         <!--Right Col-->

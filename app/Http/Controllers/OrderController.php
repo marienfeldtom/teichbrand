@@ -82,14 +82,23 @@ class OrderController extends Controller
         //
     }
 
+    public function paid(Order $order)
+    {
+      $order->paid = true;
+      $order->save();
+      return redirect('/orders');
+    }
+
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param Order $order
      * @return \Illuminate\Http\Response
+     * @throws \Exception
      */
-    public function destroy($id)
+    public function destroy(Order $order)
     {
-        //
+        $order->delete();
+        return redirect('/orders');
     }
 }

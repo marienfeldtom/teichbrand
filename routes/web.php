@@ -26,4 +26,6 @@ Route::post('/orders', 'OrderController@store');
 
 Route::group(['middleware' => ['auth']], function () {
     Route::get('/orders', 'OrderController@index');
+    Route::get('/orders/paid/{order}', 'OrderController@paid');
+    Route::delete('/orders/{order}', 'OrderController@destroy');
 });

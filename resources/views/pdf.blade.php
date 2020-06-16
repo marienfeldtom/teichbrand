@@ -17,7 +17,7 @@
 
     <div class="grid grid-cols-2 gap-4">
         <div style="padding: 10px;" class="bg-gray-200 m-5 p-2">
-            <h2 class="text-red-500 font-bold text-2xl">{{$order->first_name}}'s Ticket fürs Teichbrand</h2>
+            <h2 class="text-red-500 font-bold text-2xl">{{$order->first_name}}'s <small>{{$order->option}}-</small>Ticket fürs Teichbrand</h2>
             <p class="m-4">Moin {{$order->first_name}}, wir hoffen du hast schon genau so viel Bock aufs Teichbrand wie wir! Wir haben eine kleine Packliste für dich zusammengestellt damit du nichts vergisst. Und ohne Regeln gehlt leider auch nicht alles. Wir freuen uns auf dich :-)</p>
 
             </div>

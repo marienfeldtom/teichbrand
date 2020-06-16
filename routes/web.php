@@ -29,5 +29,6 @@ Route::get('/orders/ticket/{token}', 'OrderController@ticket');
 Route::group(['middleware' => ['auth']], function () {
     Route::get('/orders', 'OrderController@index');
     Route::get('/orders/paid/{order}', 'OrderController@paid');
+    Route::get('/orders/ship/{order}', 'OrderController@ship');
     Route::delete('/orders/{order}', 'OrderController@destroy');
 });

@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\Ticket;
 use App\Order;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use PDF;
 
 class OrderController extends Controller
@@ -66,6 +68,18 @@ class OrderController extends Controller
     public function show($id)
     {
         //
+    }
+
+    public function ship(Order $order)
+    {
+        $to = [
+            [
+                'email' => $order->email,
+                'name' => $order->first_name . ' ' . $order->last_name,
+            ]
+        ];
+        Mail::to($to)->send(new Ticket($order));
+        return redirect('/orders');
     }
 
     public function pdf($token)

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Order;
 use Illuminate\Http\Request;
+use PDF;
 
 class OrderController extends Controller
 {
@@ -44,7 +45,15 @@ class OrderController extends Controller
             'tshirt' => 'required'
         ]);
         $data = $request->all();
-        $data['token'] = $request->first_name . bin2hex(random_bytes(16));
+
+        do
+        {
+            $token = rand(111111111111,999999999999);
+            $user_code = Order::where('token', $token)->get();
+        }
+        while(!$user_code->isEmpty());
+        $data['token'] = $token;
+
        return Order::create($data);
     }
 
@@ -57,6 +66,20 @@ class OrderController extends Controller
     public function show($id)
     {
         //
+    }
+
+    public function pdf($token)
+    {
+        $order = Order::where('token', $token)->first();
+        return view('pdf')->with('order', $order);
+    }
+
+    public function ticket($token)
+    {
+        $order = Order::where('token', $token)->first();
+        $data["order"] = $order;
+        $pdf = PDF::loadView('pdf', $data);
+        return $pdf->stream('document.pdf');
     }
 
     /**

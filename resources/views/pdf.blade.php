@@ -27,11 +27,13 @@
                 <li>Zelt</li>
                 <li>Verpflegung</li>
                 <li>Getränke</li>
+                <li>Trink- und Waschwasser</li>
+                <li>Schlafsack/Isomatte</li>
+                <li>Kulturtasche</li>
                 <li>Klamotten</li>
                 <li>Dein Ticket</li>
                 <li>Gute Laune</li>
                 <li>Keine Gäste</li>
-                <li>...</li>
 
             </ul>
         </div>

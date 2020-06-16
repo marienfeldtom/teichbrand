@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\OrderMail;
 use App\Mail\Ticket;
 use App\Order;
 use Illuminate\Http\Request;
@@ -55,8 +56,16 @@ class OrderController extends Controller
         }
         while(!$user_code->isEmpty());
         $data['token'] = $token;
+        $order = Order::create($data);
+        $to = [
+            [
+                'email' => $order->email,
+                'name' => $order->first_name . ' ' . $order->last_name,
+            ]
+        ];
+        Mail::to($to)->send(new OrderMail($order));
 
-       return Order::create($data);
+       return $order;
     }
 
     /**
@@ -70,8 +79,9 @@ class OrderController extends Controller
         //
     }
 
-    public function ship(Order $order)
+    public function ship($token)
     {
+        $order = Order::where('token', $token)->first();
         $to = [
             [
                 'email' => $order->email,
@@ -123,7 +133,7 @@ class OrderController extends Controller
     {
       $order->paid = true;
       $order->save();
-      return redirect('/orders');
+      return $this->ship($order->token);
     }
 
     /**

@@ -333,13 +333,13 @@
     </style>
 </head>
 <body class="">
-<span class="preheader">{{$order->first_name}}'s Teichbrand Ticket.</span>
+<span class="preheader">{{$order->first_name}}'s Teichbrand Bestellung.</span>
 <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body">
     <tr>
         <td>&nbsp;</td>
         <td class="container">
             <div class="content">
-                <img src="https://teichbrand.beugelbuddel.de/logotb.png">
+                    <img src="https://teichbrand.beugelbuddel.de/logotb.png">
                 <!-- START CENTERED WHITE CONTAINER -->
                 <table role="presentation" class="main">
 
@@ -350,23 +350,14 @@
                                 <tr>
                                     <td>
                                         <p>Moin {{$order->first_name}},</p>
-                                        <p>Wir haben deine Bezahlung von {{$order->getPrice()}}€ in userem System vermerkt. Hier findest du dein Ticket :-)</p>
-                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
-                                            <tbody>
-                                            <tr>
-                                                <td align="left">
-                                                    <table role="presentation" border="0" cellpadding="0" cellspacing="0">
-                                                        <tbody>
-                                                        <tr>
-                                                            <td> <a href="https://teichbrand.beugelbuddel.de/orders/ticket/{{$order->token}}" target="_blank">Zum Ticket</a> </td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                        <p>Bitte bringe das Ticket zum Festival mit.</p>
+                                        <p>Wir haben deine Bestellung erhalten. Bitte überweise den Betrag von {{$order->getPrice()}}€ auf folgendes Konto:</p>
+                                        <ul>
+                                            <li><u>Kontoinhaber:</u> Ole Ben Schmidt</li>
+                                            <li><u>IBAN:</u> DE96 2175 0000 0165 4293 74</li>
+                                            <li><u>BIC:</u> NOLADE21NOS</li>
+                                            <li><u>Betrag:</u> {{$order->getPrice()}}€</li>
+                                        </ul>
+                                        <p>Sobald das Geld eingetroffen ist versenden wir dein Ticket per Mail.</p>
                                         <p>Wir freuen uns riesig auf dich.</p>
                                     </td>
                                 </tr>

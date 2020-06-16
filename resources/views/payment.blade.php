@@ -20,6 +20,7 @@
                 <div class="font-bold text-xl mb-2">Bezahlung</div>
                 <p class="text-gray-700 text-base">
                   Moin {{$order->first_name}}! Um dein Ticket zu erhalten, überweise bitte folgenden Betrag auf eins dieser Konten: <br>
+                Zusätlich haben wir dir eine Mail an {{$order->email}} mit den Bezahlinformationen geschickt.
                 <h2 class="font-bold">Betrag:</h2>
                 <ul class="list-disc">
                     @if($order->option=="weekend")<li>+25€ Full Weekend</li>
@@ -32,9 +33,10 @@
                 </ul>
 <h2 class="font-bold">an</h2>
                     <ul class="list-disc">
-                    <li>PayPal: marienfeldtom@googlemail.com</li>
-                    <li>IBAN: DE12 0000 1234 5789 00</li>
-                    <li>BIC: BYLADEM1001</li>
+                        <li><u>Kontoinhaber:</u> Ole Ben Schmidt</li>
+                        <li><u>IBAN:</u> DE96 2175 0000 0165 4293 74</li>
+                        <li><u>BIC:</u> NOLADE21NOS</li>
+                        <li><u>Betrag:</u> {{$order->getPrice()}}€</li>
                 </ul>
                     </p>
             </div>

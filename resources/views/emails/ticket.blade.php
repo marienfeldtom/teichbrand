@@ -350,7 +350,7 @@
                                 <tr>
                                     <td>
                                         <p>Moin {{$order->first_name}},</p>
-                                        <p>Wir haben deine Bezahlung {{$order->getPrice()}} in userem System vermerkt. Hier findest du dein Ticket :-)</p>
+                                        <p>Wir haben deine Bezahlung von {{$order->getPrice()}}€ in userem System vermerkt. Hier findest du dein Ticket :-)</p>
                                         <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
                                             <tbody>
                                             <tr>

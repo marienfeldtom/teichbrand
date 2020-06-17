@@ -14,12 +14,12 @@ class Order extends Model
     function getPrice() {
         $value = 0;
         if($this->option == 'weekend') {
-            $value = $value + 25;
+            $value = $value + 30;
         } else {
             $value = $value + 5;
         }
         if($this->tshirt != "Nein") {
-            $value = $value + 15;
+            $value = $value + 20;
         }
 
         return $value;

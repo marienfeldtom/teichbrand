@@ -23,11 +23,11 @@
                 Zusätlich haben wir dir eine Mail an {{$order->email}} mit den Bezahlinformationen geschickt.
                 <h2 class="font-bold">Betrag:</h2>
                 <ul class="list-disc">
-                    @if($order->option=="weekend")<li>+25€ Full Weekend</li>
+                    @if($order->option=="weekend")<li>+30€ Full Weekend</li>
                    @else<li>5€ Tagesticket</li>
                     @endif
                     @if($order->tshirt != "Nein")
-                    <li>+15€ T-Shirt</li>
+                    <li>+20€ T-Shirt</li>
                         @endif
                         <li class="font-bold" style="text-decoration: overline">={{$order->getPrice()}} €</li>
                 </ul>

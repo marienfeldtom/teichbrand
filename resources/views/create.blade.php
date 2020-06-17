@@ -142,7 +142,7 @@
         Swal.fire({
             title: 'T<span class="text-xs" style="line-height: 4rem">eichbrand</span>-Shirt!',
             text: 'Zum richtigen Festivalerlebnis gehört auch das passende Outfit! (Quanta costa? 15 Euronen). T-Shirt fällt kleiner aus.',
-            imageUrl: '/tshirt.jpg',
+            imageUrl: '/tshirt3.jpg',
             imageWidth: 400,
             imageHeight: 200,
             imageAlt: 'T-Shirt',

@@ -20,7 +20,7 @@
                 <div class="font-bold text-xl mb-2">Bezahlung</div>
                 <p class="text-gray-700 text-base">
                   Moin {{$order->first_name}}! Um dein Ticket zu erhalten, überweise bitte folgenden Betrag auf eins dieser Konten: <br>
-                Zusätlich haben wir dir eine Mail an {{$order->email}} mit den Bezahlinformationen geschickt.
+                Zusätzlich haben wir dir eine Mail an {{$order->email}} mit den Bezahlinformationen geschickt.
                 <h2 class="font-bold">Betrag:</h2>
                 <ul class="list-disc">
                     @if($order->option=="weekend")<li>+30€ Full Weekend</li>

@@ -150,7 +150,7 @@
                     </ul>
                 </div>
                 <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-                    <div class="w-full pt-6 text-4xl font-bold text-center">25€ <span class="text-base">/ pro Person</span></div>
+                    <div class="w-full pt-6 text-4xl font-bold text-center">30€ <span class="text-base">/ pro Person</span></div>
                     <div class="flex items-center justify-center">
                         <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg"><a href="/orders/create">Zur Bestellung</a></button>
                     </div>
@@ -169,7 +169,7 @@
                     </ul>
                 </div>
                 <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-                    <div class="w-full pt-6 text-3xl text-gray-600 font-bold text-center">5€ <span class="text-base">/ pro Tage</span></div>
+                    <div class="w-full pt-6 text-3xl text-gray-600 font-bold text-center">5€ <span class="text-base">pro Ticket</span></div>
                     <div class="flex items-center justify-center">
                         <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg"><a href="/orders/create">Zur Bestellung</a></button>
                     </div>

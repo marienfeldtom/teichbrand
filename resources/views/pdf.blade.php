@@ -16,12 +16,12 @@
 
 
     <div class="grid grid-cols-2 gap-4">
-        <div style="padding: 10px;" class="bg-gray-200 m-5 p-2">
+        <div style="padding-left: 10px;" class="bg-gray-200 ml-5 p-2">
             <h2 class="text-red-500 font-bold text-2xl">{{$order->first_name}}'s <small>{{$order->option}}-</small>Ticket fürs Teichbrand</h2>
             <p class="m-4">Moin {{$order->first_name}}, wir hoffen du hast schon genau so viel Bock aufs Teichbrand wie wir! Wir haben eine kleine Packliste für dich zusammengestellt damit du nichts vergisst. Und ohne Regeln geht leider auch nicht alles. Wir freuen uns auf dich :-)</p>
 
             </div>
-        <div style="padding: 10px;" class="bg-gray-200 m-5 p-2">
+        <div style="padding-left: 10px;" class="bg-gray-200 ml-5 p-2">
             <h2 class="text-red-500 font-bold text-2xl">Packliste</h2>
             <ul class="m-4 list-disc">
                 <li>Zelt</li>
@@ -40,9 +40,9 @@
 
 </div>
 
-    <div style="padding: 10px;" class="bg-gray-200 m-5 p-2">
+    <div style="padding-left: 10px;" class="bg-gray-200 ml-5 p-2">
         <h2 class="text-red-500 font-bold text-2xl">Regeln</h2>
-        <p class="m-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+        <p class="m-4">Es wird nicht in den Wald gekackt und auch nicht in den See bzw. auf das Gelände gepinkelt. Gäste und Mundpropaganda sind verboten. Auch Social Media Stories o.Ä. sind untersagt. Kein Glas (vorher umfüllen), kein Feuer, keine Autos bzw. keine Parkplätze, kein Angeln. Keine eigene Musik, keine synthetischen Drogen.</p>
     </div>
 
 <img style="margin-left: auto; margin-right: auto; margin-top: 50px; display: block;" class="bottom-0" src="data:image/png;base64,{{DNS1D::getBarcodePNG($order->token, 'EAN13')}}" alt="barcode"   />

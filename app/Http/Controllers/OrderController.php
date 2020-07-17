@@ -6,6 +6,7 @@ use App\Mail\OrderMail;
 use App\Mail\Ticket;
 use App\Order;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\Mail;
 use PDF;
 
@@ -29,6 +30,32 @@ class OrderController extends Controller
     public function create()
     {
         return view('create');
+    }
+
+    public function export()
+    {
+        $headers = array(
+            "Content-type" => "text/csv",
+            "Content-Disposition" => "attachment; filename=file.csv",
+            "Pragma" => "no-cache",
+            "Cache-Control" => "must-revalidate, post-check=0, pre-check=0",
+            "Expires" => "0"
+        );
+
+        $reviews = Order::all();
+        $columns = array('ID', 'Vorname', 'Nachname', 'E-Mail', 'T-Shirt', 'Adresse', 'Handynummer',);
+
+        $callback = function() use ($reviews, $columns)
+        {
+            $file = fopen('php://output', 'w');
+            fputcsv($file, $columns);
+
+            foreach($reviews as $review) {
+                fputcsv($file, array($review->id, $review->first_name, $review->last_name, $review->email, $review->tshirt, "", ""));
+            }
+            fclose($file);
+        };
+        return Response::stream($callback, 200, $headers);
     }
 
     /**

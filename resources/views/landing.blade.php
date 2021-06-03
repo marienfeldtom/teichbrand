@@ -63,7 +63,7 @@
 
 
 <!--Hero-->
-<div class="pt-24" style="height: 75vh">
+<div class="pt-24" style="height: auto">
 
     <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center ">
         <!--Left Col-->
@@ -72,14 +72,10 @@
             <h1 class="my-4 text-5xl font-bold leading-tight">Teichbrand 2021!</h1>
             <p class="leading-normal text-2xl mb-8">16.07 - 18.07</p>
 
-
-
-            <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg"><a href="/orders/create">Ticket kaufen</a></button>
-
         </div>
         <!--Right Col-->
         <div class="w-full md:w-3/5 py-6 text-center">
-            <img class="w-full md:w-4/5 z-50" src="logotb.png">
+            <img class="w-full md:w-4/5 z-50 pb-20" src="logotb.png">
         </div>
 
     </div>

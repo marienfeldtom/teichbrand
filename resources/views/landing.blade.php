@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Teichbrand 2020</title>
+    <title>Teichbrand 2021</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
@@ -69,8 +69,8 @@
         <!--Left Col-->
         <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
             <p class="uppercase tracking-loose w-full">Willkommen zum</p>
-            <h1 class="my-4 text-5xl font-bold leading-tight">Teichbrand 2020!</h1>
-            <p class="leading-normal text-2xl mb-8">17.07 - 19.07</p>
+            <h1 class="my-4 text-5xl font-bold leading-tight">Teichbrand 2021!</h1>
+            <p class="leading-normal text-2xl mb-8">16.07 - 18.07</p>
 
 
 
@@ -205,12 +205,12 @@
 
 <section class="container mx-auto text-center py-6 mb-12">
 
-    <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">Na los!</h1>
+    <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">Pardeeey!</h1>
     <div class="w-full mb-4">
         <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
     </div>
 
-    <h3 class="my-4 text-3xl leading-tight">Bestell das verdammte Ticket!</h3>
+    <h3 class="my-4 text-3xl leading-tight">GEB Ticket!</h3>
 
     <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg"><a href="/orders/create">Zur Bestellung</a></button>
 

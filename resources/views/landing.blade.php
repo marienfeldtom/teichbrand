@@ -225,9 +225,9 @@
                                 <div class="flex-auto ml-3 justify-evenly py-2">
                                     <div class="flex flex-wrap ">
                                         <div class="w-full flex-none text-xs text-blue-700 font-medium ">
-                                            Must have
+                                            "Was zieh ich an!?"
                                         </div>
-                                        <h2 class="flex-auto text-lg font-medium">Teichbrand T-Shirt</h2>
+                                        <h2 class="flex-auto text-lg font-medium">Turbulentes T-Shirt</h2>
                                     </div>
                                     <p class="mt-3"></p>
                                     <div class="flex py-4  text-sm text-gray-600">
@@ -259,9 +259,9 @@
                                 <div class="flex-auto ml-3 justify-evenly py-2">
                                     <div class="flex flex-wrap ">
                                         <div class="w-full flex-none text-xs text-blue-700 font-medium ">
-                                            Für die Schmöker
+                                            Lungenbrötchen?
                                         </div>
-                                        <h2 class="flex-auto text-lg font-medium">Elektrofeuerzeug mit Bieröffner</h2>
+                                        <h2 class="flex-auto text-lg font-medium">Elegantes Elektrofeuerzeug</h2>
                                     </div>
                                     <p class="mt-3"></p>
                                     <div class="flex py-4  text-sm text-gray-600">
@@ -294,9 +294,9 @@
                                 <div class="flex-auto ml-3 justify-evenly py-2">
                                     <div class="flex flex-wrap ">
                                         <div class="w-full flex-none text-xs text-blue-700 font-medium ">
-                                            Lust zu angeln?
+                                            Leidenschaftlicher Angler?
                                         </div>
-                                        <h2 class="flex-auto text-lg font-medium">Fischerhut</h2>
+                                        <h2 class="flex-auto text-lg font-medium">Flotter Fischerhut</h2>
                                     </div>
                                     <p class="mt-3"></p>
                                     <div class="flex py-4  text-sm text-gray-600">
@@ -331,7 +331,7 @@
                                         <div class="w-full flex-none text-xs text-blue-700 font-medium ">
                                             Ohne Fahrschein?
                                         </div>
-                                        <h2 class="flex-auto text-lg font-medium">Festival Bändchen</h2>
+                                        <h2 class="flex-auto text-lg font-medium">Beflügelndes Bändchen</h2>
                                     </div>
                                     <p class="mt-3"></p>
                                     <div class="flex py-4  text-sm text-gray-600">

@@ -218,7 +218,7 @@
                     <div class="flex flex-col ">
                         <div class="bg-white shadow-md  rounded-3xl p-4">
                             <div class="flex-none lg:flex">
-                                <div class=" h-full w-full lg:h-48 lg:w-48   lg:mb-0 mb-3">
+                                <div class=" h-full w-full lg:h-48 lg:w-64   lg:mb-0 mb-3">
                                     <img src="tshirt3.jpg" alt="Just a flower"
                                         class=" w-full  object-scale-down lg:object-contain  lg:h-48 rounded-2xl">
                                 </div>
@@ -252,7 +252,7 @@
                     <div class="flex flex-col ">
                         <div class="bg-white shadow-md  rounded-3xl p-4">
                             <div class="flex-none lg:flex">
-                                <div class=" h-full w-full lg:h-48 lg:w-48   lg:mb-0 mb-3">
+                                <div class=" h-full w-full lg:h-48 lg:w-64   lg:mb-0 mb-3">
                                     <img src="feuerzeug.JPG" alt="Just a flower"
                                         class=" w-full  object-scale-down lg:object-contain  lg:h-48 rounded-2xl">
                                 </div>
@@ -287,7 +287,7 @@
                     <div class="flex flex-col ">
                         <div class="bg-white shadow-md  rounded-3xl p-4">
                             <div class="flex-none lg:flex">
-                                <div class=" h-full w-full lg:h-48 lg:w-48   lg:mb-0 mb-3">
+                                <div class=" h-full w-full lg:h-48 lg:w-64   lg:mb-0 mb-3">
                                     <img src="fischerhut.JPG" alt="Just a flower"
                                         class=" w-full  object-scale-down lg:object-contain  lg:h-48 rounded-2xl">
                                 </div>
@@ -322,7 +322,7 @@
                     <div class="flex flex-col ">
                         <div class="bg-white shadow-md  rounded-3xl p-4">
                             <div class="flex-none lg:flex">
-                                <div class=" h-full w-full lg:h-48 lg:w-48   lg:mb-0 mb-3">
+                                <div class=" h-full w-full lg:h-48 lg:w-64   lg:mb-0 mb-3">
                                     <img src="band.jpg" alt="Just a flower"
                                         class=" w-full  object-scale-down lg:object-contain  lg:h-48 rounded-2xl">
                                 </div>

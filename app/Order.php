@@ -16,7 +16,7 @@ class Order extends Model
         if($this->option == 'weekend') {
             $value = $value + 30;
         } else {
-            $value = $value + 5;
+            $value = $value + 10;
         }
         if($this->tshirt != "Nein") {
             $value = $value + 20;

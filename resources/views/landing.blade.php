@@ -198,7 +198,7 @@
                         </ul>
                     </div>
                     <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-                        <div class="w-full pt-6 text-3xl text-gray-600 font-bold text-center">5€ <span
+                        <div class="w-full pt-6 text-3xl text-gray-600 font-bold text-center">10€ <span
                                 class="text-base">pro Ticket</span></div>
                         <div class="flex items-center justify-center">
                             <button

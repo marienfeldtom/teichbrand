@@ -28,7 +28,7 @@
                         <h2 class="font-bold">Betrag:</h2>
                         <ul class="list-disc">
                             @if($order->option=="weekend")<li>+30€ Full Weekend</li>
-                            @else<li>5€ Tagesticket</li>
+                            @else<li>10€ Tagesticket</li>
                             @endif
                             @if($order->tshirt != "Nein")
                             <li>+20€ T-Shirt</li>

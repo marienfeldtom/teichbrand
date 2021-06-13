@@ -330,23 +330,23 @@
                             <div class="bg-white shadow-md  rounded-3xl p-4">
                                 <div class="flex-none lg:flex">
                                     <div class=" h-full w-full lg:h-48 lg:w-64   lg:mb-0 mb-3">
-                                        <img src="band.jpg" alt="Just a flower"
+                                        <img src="cappy.JPG" alt="Just a flower"
                                             class=" w-full  object-scale-down lg:object-contain  lg:h-48 rounded-2xl">
                                     </div>
                                     <div class="flex-auto ml-3 justify-evenly py-2">
                                         <div class="flex flex-wrap ">
                                             <div class="w-full flex-none text-xs text-blue-700 font-medium ">
-                                                Ohne Fahrschein?
+                                               Für die Checker
                                             </div>
-                                            <h2 class="flex-auto text-lg font-medium">Beflügelndes Bändchen</h2>
+                                            <h2 class="flex-auto text-lg font-medium">Charmante Cap</h2>
                                         </div>
-                                        <p class="mt-3"></p>
+                                        <p class="mt-3 text-sm">(Farbe/Design kann stark abweichen)</p>
                                         <div class="flex py-4  text-sm text-gray-600">
                                             <div class="flex-1 inline-flex items-center">
                                                 <div class="flex py-4  text-sm text-gray-600">
                                                     <div class="flex-1 inline-flex items-center">
                                                         <i class="fas fa-tags"></i>
-                                                        <p class="ml-2"> 0€, bei jeder Bestellung dabei</p>
+                                                        <p class="ml-2"> 18€</p>
                                                     </div>
                                                 </div>
                                             </div>

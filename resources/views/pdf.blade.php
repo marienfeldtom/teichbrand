@@ -34,6 +34,7 @@
                 <li>Dein Ticket</li>
                 <li>Gute Laune</li>
                 <li>Keine Gäste</li>
+                <li>Negatives Covid Testergebnis / Impfnachweis</li>
 
             </ul>
         </div>

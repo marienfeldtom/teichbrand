@@ -72,6 +72,9 @@ class OrderController extends Controller
             'last_name' => 'required|max:255',
             'email' => 'required|max:255',
             'option' => 'required',
+            'cap' => 'required',
+            'hat' => 'required',
+            'lighter' => 'required',
             'tshirt' => 'required'
         ]);
         $data = $request->all();

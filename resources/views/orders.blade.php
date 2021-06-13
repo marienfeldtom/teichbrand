@@ -23,6 +23,9 @@
                                     <th scope="col">E-Mail</th>
                                     <th scope="col">Option</th>
                                     <th scope="col">T-Shirt?</th>
+                                    <th scope="col">Cap?</th>
+                                    <th scope="col">Fischerhut?</th>
+                                    <th scope="col">Feuerzeug?</th>
                                     <th scope="col">Datum</th>
                                     <th scope="col">Bezahlt</th>
                                     <th scope="col">Betrag</th>
@@ -38,6 +41,9 @@
                                     <td>{{$order->email}}</td>
                                     <td>{{$order->option}}</td>
                                     <td>{{$order->tshirt}}</td>
+                                    <td>{{$order->cap}}</td>
+                                    <td>{{$order->hat}}</td>
+                                    <td>{{$order->lighter}}</td>
                                         <td>{{Carbon\Carbon::parse($order->created_at)->format('d.m.Y - H:i')}}</td>
                                     <td>{{$order->paid ? Carbon\Carbon::parse($order->updated_at)->format('d.m.Y - H:i') : 'Nein'}}</td>
                                         <td>{{$order->getPrice()}} €</td>

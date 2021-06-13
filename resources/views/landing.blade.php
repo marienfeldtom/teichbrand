@@ -22,6 +22,10 @@
 
     <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         .gradient {
             background: linear-gradient(90deg, #B54B6E 10%, #FFB45A 90%);
         }
@@ -60,8 +64,11 @@
                 id="nav-content">
                 <ul class="list-reset lg:flex justify-end flex-1 items-center">
                 </ul>
+                <button id="merchbutton"
+                    class="mx-auto mr-3 lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75"><a
+                        href="#merch">Merch</a></button>
                 <button id="navAction"
-                    class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75"><a
+                    class="mx-auto  ml-3 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75"><a
                         href="/orders/create">Zur Bestellung</a></button>
             </div>
         </div>
@@ -205,158 +212,158 @@
 
 
             <div class="content">
+                <section id="merch">
+                    <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800">
 
-                <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800">
-
-                    <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">Merch</h1>
-                    <div class="w-full mb-4">
-                        <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+                        <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">Merch</h1>
+                        <div class="w-full mb-4">
+                            <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+                        </div>
                     </div>
-                </div>
 
-                <div class="grid mt-8 gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-2">
-                    <div class="flex flex-col ">
-                        <div class="bg-white shadow-md  rounded-3xl p-4">
-                            <div class="flex-none lg:flex">
-                                <div class=" h-full w-full lg:h-48 lg:w-64   lg:mb-0 mb-3">
-                                    <img src="tshirt3.jpg" alt="Just a flower"
-                                        class=" w-full  object-scale-down lg:object-contain  lg:h-48 rounded-2xl">
-                                </div>
-                                <div class="flex-auto ml-3 justify-evenly py-2">
-                                    <div class="flex flex-wrap ">
-                                        <div class="w-full flex-none text-xs text-blue-700 font-medium ">
-                                            "Was zieh ich an!?"
-                                        </div>
-                                        <h2 class="flex-auto text-lg font-medium">Turbulentes T-Shirt</h2>
+                    <div class="grid mt-8 gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-2">
+                        <div class="flex flex-col ">
+                            <div class="bg-white shadow-md  rounded-3xl p-4">
+                                <div class="flex-none lg:flex">
+                                    <div class=" h-full w-full lg:h-48 lg:w-64   lg:mb-0 mb-3">
+                                        <img src="tshirt_2021.png" alt="Just a flower"
+                                            class=" w-full  object-scale-down lg:object-contain  lg:h-48 rounded-2xl">
                                     </div>
-                                    <p class="mt-3"></p>
-                                    <div class="flex py-4  text-sm text-gray-600">
-                                        <div class="flex-1 inline-flex items-center">
-                                            <div class="flex py-4  text-sm text-gray-600">
-                                                <div class="flex-1 inline-flex items-center">
-                                                    <i class="fas fa-tags"></i>
-                                                    <p class="ml-2"> 20,- €</p>
+                                    <div class="flex-auto ml-3 justify-evenly py-2">
+                                        <div class="flex flex-wrap ">
+                                            <div class="w-full flex-none text-xs text-blue-700 font-medium ">
+                                                "Was zieh ich an!?"
+                                            </div>
+                                            <h2 class="flex-auto text-lg font-medium">Turbulentes T-Shirt</h2>
+                                        </div>
+                                        <p class="mt-3"></p>
+                                        <div class="flex py-4  text-sm text-gray-600">
+                                            <div class="flex-1 inline-flex items-center">
+                                                <div class="flex py-4  text-sm text-gray-600">
+                                                    <div class="flex-1 inline-flex items-center">
+                                                        <i class="fas fa-tags"></i>
+                                                        <p class="ml-2"> 20,- €</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="flex items-center justify-center">
+                                            <button
+                                                class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg"><a
+                                                    href="/orders/create">Zur Bestellung</a></button>
+                                        </div>
                                     </div>
-                                    <div class="flex items-center justify-center">
-                                        <button
-                                            class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg"><a
-                                                href="/orders/create">Zur Bestellung</a></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col ">
+                            <div class="bg-white shadow-md  rounded-3xl p-4">
+                                <div class="flex-none lg:flex">
+                                    <div class=" h-full w-full lg:h-48 lg:w-64   lg:mb-0 mb-3">
+                                        <img src="feuerzeug.JPG" alt="Just a flower"
+                                            class=" w-full  object-scale-down lg:object-contain  lg:h-48 rounded-2xl">
+                                    </div>
+                                    <div class="flex-auto ml-3 justify-evenly py-2">
+                                        <div class="flex flex-wrap ">
+                                            <div class="w-full flex-none text-xs text-blue-700 font-medium ">
+                                                Lungenbrötchen?
+                                            </div>
+                                            <h2 class="flex-auto text-lg font-medium">Elegantes Elektrofeuerzeug</h2>
+                                        </div>
+                                        <p class="mt-3"></p>
+                                        <div class="flex py-4  text-sm text-gray-600">
+                                            <div class="flex-1 inline-flex items-center">
+                                                <div class="flex py-4  text-sm text-gray-600">
+                                                    <div class="flex-1 inline-flex items-center">
+                                                        <i class="fas fa-tags"></i>
+                                                        <p class="ml-2"> 2,- €</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center justify-center">
+                                            <button
+                                                class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg"><a
+                                                    href="/orders/create">Zur Bestellung</a></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col ">
+                            <div class="bg-white shadow-md  rounded-3xl p-4">
+                                <div class="flex-none lg:flex">
+                                    <div class=" h-full w-full lg:h-48 lg:w-64   lg:mb-0 mb-3">
+                                        <img src="fischerhut.JPG" alt="Just a flower"
+                                            class=" w-full  object-scale-down lg:object-contain  lg:h-48 rounded-2xl">
+                                    </div>
+                                    <div class="flex-auto ml-3 justify-evenly py-2">
+                                        <div class="flex flex-wrap ">
+                                            <div class="w-full flex-none text-xs text-blue-700 font-medium ">
+                                                Leidenschaftlicher Angler?
+                                            </div>
+                                            <h2 class="flex-auto text-lg font-medium">Flotter Fischerhut</h2>
+                                        </div>
+                                        <p class="mt-3 text-sm">(Farbe/Design kann stark abweichen)</p>
+                                        <div class="flex py-4  text-sm text-gray-600">
+                                            <div class="flex-1 inline-flex items-center">
+                                                <div class="flex py-4  text-sm text-gray-600">
+                                                    <div class="flex-1 inline-flex items-center">
+                                                        <i class="fas fa-tags"></i>
+                                                        <p class="ml-2"> 13,- €</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center justify-center">
+                                            <button
+                                                class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg"><a
+                                                    href="/orders/create">Zur Bestellung</a></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col ">
+                            <div class="bg-white shadow-md  rounded-3xl p-4">
+                                <div class="flex-none lg:flex">
+                                    <div class=" h-full w-full lg:h-48 lg:w-64   lg:mb-0 mb-3">
+                                        <img src="band.jpg" alt="Just a flower"
+                                            class=" w-full  object-scale-down lg:object-contain  lg:h-48 rounded-2xl">
+                                    </div>
+                                    <div class="flex-auto ml-3 justify-evenly py-2">
+                                        <div class="flex flex-wrap ">
+                                            <div class="w-full flex-none text-xs text-blue-700 font-medium ">
+                                                Ohne Fahrschein?
+                                            </div>
+                                            <h2 class="flex-auto text-lg font-medium">Beflügelndes Bändchen</h2>
+                                        </div>
+                                        <p class="mt-3"></p>
+                                        <div class="flex py-4  text-sm text-gray-600">
+                                            <div class="flex-1 inline-flex items-center">
+                                                <div class="flex py-4  text-sm text-gray-600">
+                                                    <div class="flex-1 inline-flex items-center">
+                                                        <i class="fas fa-tags"></i>
+                                                        <p class="ml-2"> 0€, bei jeder Bestellung dabei</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center justify-center">
+                                            <button
+                                                class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg"><a
+                                                    href="/orders/create">Zur Bestellung</a></button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="flex flex-col ">
-                        <div class="bg-white shadow-md  rounded-3xl p-4">
-                            <div class="flex-none lg:flex">
-                                <div class=" h-full w-full lg:h-48 lg:w-64   lg:mb-0 mb-3">
-                                    <img src="feuerzeug.JPG" alt="Just a flower"
-                                        class=" w-full  object-scale-down lg:object-contain  lg:h-48 rounded-2xl">
-                                </div>
-                                <div class="flex-auto ml-3 justify-evenly py-2">
-                                    <div class="flex flex-wrap ">
-                                        <div class="w-full flex-none text-xs text-blue-700 font-medium ">
-                                            Lungenbrötchen?
-                                        </div>
-                                        <h2 class="flex-auto text-lg font-medium">Elegantes Elektrofeuerzeug</h2>
-                                    </div>
-                                    <p class="mt-3"></p>
-                                    <div class="flex py-4  text-sm text-gray-600">
-                                        <div class="flex-1 inline-flex items-center">
-                                            <div class="flex py-4  text-sm text-gray-600">
-                                                <div class="flex-1 inline-flex items-center">
-                                                    <i class="fas fa-tags"></i>
-                                                    <p class="ml-2"> 2,- €</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-center justify-center">
-                                        <button
-                                            class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg"><a
-                                                href="/orders/create">Zur Bestellung</a></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-col ">
-                        <div class="bg-white shadow-md  rounded-3xl p-4">
-                            <div class="flex-none lg:flex">
-                                <div class=" h-full w-full lg:h-48 lg:w-64   lg:mb-0 mb-3">
-                                    <img src="fischerhut.JPG" alt="Just a flower"
-                                        class=" w-full  object-scale-down lg:object-contain  lg:h-48 rounded-2xl">
-                                </div>
-                                <div class="flex-auto ml-3 justify-evenly py-2">
-                                    <div class="flex flex-wrap ">
-                                        <div class="w-full flex-none text-xs text-blue-700 font-medium ">
-                                            Leidenschaftlicher Angler?
-                                        </div>
-                                        <h2 class="flex-auto text-lg font-medium">Flotter Fischerhut</h2>
-                                    </div>
-                                    <p class="mt-3"></p>
-                                    <div class="flex py-4  text-sm text-gray-600">
-                                        <div class="flex-1 inline-flex items-center">
-                                            <div class="flex py-4  text-sm text-gray-600">
-                                                <div class="flex-1 inline-flex items-center">
-                                                    <i class="fas fa-tags"></i>
-                                                    <p class="ml-2"> 12,- €</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-center justify-center">
-                                        <button
-                                            class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg"><a
-                                                href="/orders/create">Zur Bestellung</a></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-col ">
-                        <div class="bg-white shadow-md  rounded-3xl p-4">
-                            <div class="flex-none lg:flex">
-                                <div class=" h-full w-full lg:h-48 lg:w-64   lg:mb-0 mb-3">
-                                    <img src="band.jpg" alt="Just a flower"
-                                        class=" w-full  object-scale-down lg:object-contain  lg:h-48 rounded-2xl">
-                                </div>
-                                <div class="flex-auto ml-3 justify-evenly py-2">
-                                    <div class="flex flex-wrap ">
-                                        <div class="w-full flex-none text-xs text-blue-700 font-medium ">
-                                            Ohne Fahrschein?
-                                        </div>
-                                        <h2 class="flex-auto text-lg font-medium">Beflügelndes Bändchen</h2>
-                                    </div>
-                                    <p class="mt-3"></p>
-                                    <div class="flex py-4  text-sm text-gray-600">
-                                        <div class="flex-1 inline-flex items-center">
-                                            <div class="flex py-4  text-sm text-gray-600">
-                                                <div class="flex-1 inline-flex items-center">
-                                                    <i class="fas fa-tags"></i>
-                                                    <p class="ml-2"> 0€, bei jeder Bestellung dabei</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-center justify-center">
-                                        <button
-                                            class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg"><a
-                                                href="/orders/create">Zur Bestellung</a></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
-
-        </div>
+    </section>
+    </div>
 
 
     </section>

@@ -82,10 +82,7 @@
     </div>
 
     <div class="options md:flex md:space-x-6 text-sm items-center text-gray-700 mt-4">
-        <p class="w-1/2 mb-2 md:mb-0">T-Shirt? (20€) <br><small>Shirt Entwurf:</small><button onclick="showTshirt()" type="button" class="btn btn-outline-primary"><svg class="bi bi-eye-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
-                    <path fill-rule="evenodd" d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
-                </svg></button></p>
+        <p class="w-1/2 mb-2 md:mb-0">T-Shirt? (20€)</p>
         <select id="tshirt" name="tshirt" class="w-full border border-gray-200 p-2 focus:outline-none focus:border-gray-500">
             <option value="S">S</option>
             <option value="M">M</option>
@@ -95,6 +92,31 @@
             <option value="Nein">Kein T-Shirt</option>
         </select>
     </div>
+    <div class="options md:flex md:space-x-6 text-sm items-center text-gray-700 mt-4">
+        <p class="w-1/2 mb-2 md:mb-0">Cap? (18€)</p>
+        <select id="cap" name="cap" class="w-full border border-gray-200 p-2 focus:outline-none focus:border-gray-500">
+            <option value="Ja">Ja</option>
+            <option value="Nein">Nein</option>
+        </select>
+    </div>
+    <div class="options md:flex md:space-x-6 text-sm items-center text-gray-700 mt-4">
+        <p class="w-1/2 mb-2 md:mb-0">Fischerhut? (13€)</p>
+        <select id="hat" name="hat" class="w-full border border-gray-200 p-2 focus:outline-none focus:border-gray-500">
+            <option value="Ja">Ja</option>
+            <option value="Nein">Nein</option>
+        </select>
+    </div>
+    <div class="options md:flex md:space-x-6 text-sm items-center text-gray-700 mt-4">
+        <p class="w-1/2 mb-2 md:mb-0">Feuerzeug? (je 2€)</p>
+        <select id="lighter" name="lighter" class="w-full border border-gray-200 p-2 focus:outline-none focus:border-gray-500">
+            <option value="0">0</option>
+            @for ($i = 1; $i < 11; $i++)
+            <option value="{{$i}}">{{$i}}</option>
+            @endfor
+        </select>
+    </div>
+
+
 
 
 
@@ -113,6 +135,9 @@
         last_name: document.getElementById("last_name").value,
         email: document.getElementById("email").value,
         option: document.getElementById("option").value,
+        cap: document.getElementById("cap").value,
+        hat: document.getElementById("hat").value,
+        lighter: document.getElementById("lighter").value,
         tshirt: document.getElementById("tshirt").value
     })
         .then(function (response) {

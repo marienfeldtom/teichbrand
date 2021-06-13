@@ -22,6 +22,9 @@ class CreateOrdersTable extends Migration
             $table->string('token');
             $table->boolean('paid')->default(false);
             $table->string('tshirt');
+            $table->string('cap');
+            $table->string('hat');
+            $table->integer('lighter');
             $table->timestamps();
         });
     }

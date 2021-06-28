@@ -43,7 +43,7 @@ class OrderController extends Controller
         );
 
         $reviews = Order::all();
-        $columns = array('ID', 'Vorname', 'Nachname', 'E-Mail', 'T-Shirt', 'Adresse', 'Handynummer',);
+        $columns = array('ID', 'Vorname', 'Nachname', 'E-Mail', 'T-Shirt', 'Cap', 'Fischerhut', 'Feuerzeuge', 'Adresse', 'Handynummer',);
 
         $callback = function() use ($reviews, $columns)
         {
@@ -51,7 +51,7 @@ class OrderController extends Controller
             fputcsv($file, $columns);
 
             foreach($reviews as $review) {
-                fputcsv($file, array($review->id, $review->first_name, $review->last_name, $review->email, $review->tshirt, "", ""));
+                fputcsv($file, array($review->id, $review->first_name, $review->last_name, $review->email, $review->tshirt, $review->cap, $review->hat, $review->lighter, "", ""));
             }
             fclose($file);
         };
